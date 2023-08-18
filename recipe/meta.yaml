@@ -1,5 +1,5 @@
 {% set name = "OnStove" %}
-{% set version = "0.1.4" %}
+{% set version = "0.1.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/Open-Source-Spatial-Clean-Cooking-Tool/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 5dabcac3047d03597635bd0c40f6066d27b4bd854b9e9680ed72e46e21ea752a
+  sha256: f495c7e5a928251a0e64c8e4f6ce352a68c202f582404ff68ed0024f2a24c178
 
 build: 
   noarch: python
@@ -22,11 +22,11 @@ requirements:
     - dill
     - geopandas
     - jupyterlab
-    - matplotlib-base <=3.5.2
-    - plotnine
+    - matplotlib-base
+    - plotnine >=0.12.2
     - psutil
     - psycopg2
-    - pyproj <=3.3.1
+    - pyproj
     - python >=3.10
     - python-decouple
     - rasterio
