@@ -12,7 +12,7 @@ source:
 build: 
   noarch: python
   script: "{{ PYTHON }} -m pip install . -vv"
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -23,6 +23,7 @@ requirements:
     - geopandas
     - jupyterlab
     - matplotlib-base
+    - mizani >=0.9.0, <0.10.0 
     - plotnine >=0.12.2
     - psutil
     - psycopg2
