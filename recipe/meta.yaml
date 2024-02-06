@@ -1,5 +1,5 @@
 {% set name = "OnStove" %}
-{% set version = "0.1.5" %}
+{% set version = "0.1.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://github.com/Open-Source-Spatial-Clean-Cooking-Tool/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: f495c7e5a928251a0e64c8e4f6ce352a68c202f582404ff68ed0024f2a24c178
+  sha256: a552ef71168162616d37f6bfed4e3c624d46a61597123a05b4c66d35705fa7e6
 
 build: 
   noarch: python
   script: "{{ PYTHON }} -m pip install . -vv"
-  number: 1
+  number: 0
 
 requirements:
   host:
