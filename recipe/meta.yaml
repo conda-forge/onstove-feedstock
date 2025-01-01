@@ -1,3 +1,4 @@
+{% set python_min = '3.10' %}
 {% set name = "OnStove" %}
 {% set version = "0.1.6" %}
 
@@ -12,11 +13,11 @@ source:
 build: 
   noarch: python
   script: "{{ PYTHON }} -m pip install . -vv"
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.10
+    - python {{ python_min }}
     - pip
   run:
     - dill
@@ -28,7 +29,7 @@ requirements:
     - psutil
     - psycopg2
     - pyproj
-    - python >=3.10
+    - python >={{ python_min }}
     - python-decouple
     - rasterio
     - scikit-image
@@ -36,6 +37,8 @@ requirements:
     - svgpath2mpl
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - onstove
 
