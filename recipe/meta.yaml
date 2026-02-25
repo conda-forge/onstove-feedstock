@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/Open-Source-Spatial-Clean-Cooking-Tool/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: f972c1264cb6a9c6b3b88f536aefc792704c73cfdb1b998f19810c40e9f39704
+  sha256: db93f4812f1f270302e304a5df170b5d47be213feca9d239069c2a26822c3383
 
 build: 
   noarch: python
